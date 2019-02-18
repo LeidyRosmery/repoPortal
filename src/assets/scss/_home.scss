@@ -1,0 +1,75 @@
+.sec-home {
+  .cnt-home {
+    .banner-portal {
+      width: 100%;
+    }
+
+    .wp-portal {
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      border-top: 7px solid $blueLight;
+      @include minw(md) {
+        width: 75%;
+        border-top: 10px solid $blueLight;
+      }
+
+      .wrapper-references {
+        padding: 20px;
+        @include minw(md) {
+          padding: 40px 20px;
+        }
+      }
+
+      .title-sec {
+        color: $blueDark;
+        line-height: 1.1em;
+        font-family: $ff-bold;
+        font-size: 1.2em;
+        width: 100%;
+        @include minw(md) {
+          font-size: 2em;
+          width: 70%;
+          line-height: 0.9em;
+          padding-bottom: 10px;
+        }
+      }
+
+      .text-portal {
+        margin: 0;
+        width: 100%;
+        font-size: 0.9em;
+        color: $grayLight;
+        font-family: $ff-regular;
+        line-height: 1.2em;
+        @include minw(md) {
+          width: 75%;
+          font-size: 1.1em;
+          line-height: 1.1em;
+        }
+      }
+
+      .icon-search {
+        margin: 35px 20px;
+      }
+
+      .btn-go {
+        width: 180px;
+        height: 2.4em;
+        background-color: $blueLight;
+        color: $white;
+        font-family: $ff-bold;
+        margin-left: 20px;
+        border-radius: 10px;
+        font-size: 1em;
+        font-weight: bold;
+        margin: 15px 0;
+        line-height: 2.4em;
+        @include minw(md) {
+          font-size: 1.2em;
+          margin: 30px 0;
+        }
+      }
+    }
+  }
+}

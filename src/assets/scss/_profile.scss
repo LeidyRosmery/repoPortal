@@ -1,0 +1,101 @@
+.pad-0 {
+  padding: 0!important !important;
+}
+
+.profile-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  @include minw(md) {
+    width: 75%;
+  }
+
+  .profile-content {
+    @include minw(md) {
+      padding-bottom: 40px;
+    }
+  }
+
+  h1.title-main {
+    color: $blueDark;
+    font-family: $ff-bold;
+    font-size: 2.2em;
+    margin: 0;
+    @include minw(md) {
+      font-size: 2.7em;
+    }
+  }
+
+  h2.title-sub {
+    color: $gray2;
+    font-family: $ff-light;
+    font-size: 1em;
+    margin: 0;
+    @include minw(md) {
+      font-size: 1.2em;
+    }
+  }
+
+  .profile-header {
+    padding: 10px 0;
+    @include minw(md) {
+      padding: 30px 0;
+    }
+  }
+
+  .field {
+    padding: 5px;
+    width: 100%;
+
+    .input-profile,
+    .select-profile {
+      color: $grayLight;
+      font-size: 1.1em;
+      font-family: $ff-light;
+      padding: 0 10px;
+      width: 100%;
+      border-radius: 5px;
+      height: 35px;
+      border: 1px solid $border-input;
+
+      &:focus {
+        outline: none;
+        border-color: $border-input;
+        box-shadow: none;
+      }
+    }
+    // input, select{
+    //   @include minw(md){
+    //     width: 85%;
+    //   }
+    // }
+  }
+
+  .cont-profile {
+    border: 2px solid #5C5B5F;
+    border-radius: 20px;
+    /* height: 120px; */
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 10px;
+    @include minw(sm) {
+      width: 100%;
+    }
+    @include minw(md) {
+      height: 200px;
+      width: 100%;
+    }
+  }
+
+  p.name-label {
+    font-size: 1em;
+    color: #575655;
+    font-family: "opensans-Light",sans-serif;
+    text-align: left;
+    margin-bottom: 0;
+    @include minw(md) {
+      font-size: 1.2em;
+      text-align: right;
+    }
+  }
+}

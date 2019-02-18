@@ -1,0 +1,119 @@
+.flex {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.mg-space {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.activator {
+  display: block !important;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.mrg-input {
+  margin-bottom: 8px;
+}
+
+.p-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.border-line {
+  @include minw(md) {
+    border-bottom: 10px solid #00A5CA;
+  }
+}
+
+.pd-item {
+  padding-bottom: 20px;
+}
+
+.flickity-prev-next-button {
+  border-radius: 0;
+  width: 30px;
+  height: 80px;
+  @include minw(md) {
+    width: 40px;
+    height: 174px;
+  }
+}
+
+.flickity-prev-next-button.previous {
+  left: 0;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.flickity-prev-next-button.next {
+  right: 0;
+}
+
+.flickity-page-dots .dot {
+  width: 14px;
+  height: 14px;
+  margin: 0 6px;
+}
+
+.flickity-prev-next-button {
+  top: 24%;
+  @include minw(md) {
+    top: 50%;
+  }
+}
+
+.flickity-page-dots {
+  bottom: 5%;
+  left: 0;
+  @include minw(md) {
+    bottom: 10%;
+    left: 35%;
+  }
+}
+
+.tablagen {
+  display: table;
+
+  .fila {
+    display: table-row;
+  }
+
+  .fila p {
+    border-right: 1px solid #575655;
+    margin: 3px 1px;
+    text-align: center;
+    padding: 0 5px;
+    color: #575655;
+    font-weight: lighter;
+    font-size: 1em;
+    font-family: "openSans-Light", sans-serif;
+    @include minw(md) {
+      padding: 0 15px;
+      margin: 3px 5px;
+    }
+  }
+
+  .fila .no-border {
+    border: none;
+  }
+
+  .column {
+    display: table-cell;
+    text-align: center;
+  }
+}

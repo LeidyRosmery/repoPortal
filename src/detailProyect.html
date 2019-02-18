@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<section class="sec-proyecto sec-detailProyecto">
+  <header class="header-portal border-line">
+    <div class="wrapper-header">
+      <div class="wp-logo">
+        <img class="img-responsive" src="assets/img/logo-header.png" alt="" />
+      </div>
+      <div class="wp-login">
+        <h1 class="d-none d-md-block title-portal">PORTAL DE REFERENCIAS GLOBAL</h1>
+        <div class="content-log">
+          <span class="d-none d-md-block name-user">azalvidea@seidor.com
+          </span>
+          <div class="div-user" data-toggle="modal">
+            <img class="img-responsive" src="assets//img/user-login.png" alt="" />
+            <div class="div-profile profile-quick">
+              <h3 class="title-detail__profile">Informacion de perfil</h3>
+              <div class="detail-contact__profile">
+                <div class="wp-head-profile">
+                  <img class="img-profile" src="assets//img/profile.png" alt="">
+                  <div class="main__profile ">
+                    <p class="name-user">Michael Muller</p>
+                    <p class="job-user">Account Manager</p>
+                  </div>
+                </div>
+                <div class="block-detail">
+                  <p class="title-sec__profile">Detalles del Perfil</p>
+                  <p class="label__profile">Telefono</p>
+                  <p class="data-label__profile">+ 001 6101 34869-0</p>
+                  <p class="label__profile">Fijo</p>
+                  <p class="data-label__profile">+ 001 6101 34869-0</p>
+                  <p class="label__profile">Email</p>
+                  <p class="data-label__profile">main.contact@company.com</p>
+                </div>
+
+                <div class="block-detail">
+                  <p class="title-sec__profile">Compañia</p>
+                  <p class="label__profile">Nombre</p>
+                  <p class="data-label__profile"> Adventure Company</p>
+                  <p class="label__profile">Direccion</p>
+                  <p class="data-label__profile">Main Street 4572, Los Angeles USA</p>
+                </div>
+                <div class="config-user">
+                  <div class="edit">
+                    <i class="icn-btn glyphicon glyphicon-cog"></i>Editar Configuración
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="exampleModal" class="md-profile modal fade exampleModal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">X</span>
+                    </button>
+                    <div class="profile-quick__modal">
+                      <h3 class="title-detail__profile">Informacion de perfil</h3>
+                      <div class="detail-contact__profile">
+                        <div class="wp-head-profile">
+                          <img class="img-profile" src="assets//img/profile.png" alt="">
+                          <div class="main__profile ">
+                            <p class="name-user">Michael Muller</p>
+                            <p class="job-user">Account Manager</p>
+                          </div>
+                        </div>
+
+                        <div class="block-detail">
+                          <p class="title-sec__profile">Detalles del Perfil</p>
+                          <p class="label__profile">Telefono</p>
+                          <p class="data-label__profile">+ 001 6101 34869-0</p>
+                          <p class="label__profile">Fijo</p>
+                          <p class="data-label__profile">+ 001 6101 34869-0</p>
+                          <p class="label__profile">Email</p>
+                          <p class="data-label__profile">main.contact@company.com</p>
+                        </div>
+
+                        <div class="block-detail">
+                          <p class="title-sec__profile">Compañia</p>
+                          <p class="label__profile">Nombre</p>
+                          <p class="data-label__profile"> Adventure Company</p>
+                          <p class="label__profile">Direccion</p>
+                          <p class="data-label__profile">Main Street 4572, Los Angeles USA</p>
+                        </div>
+                        <div class="config-user">
+                          <div class="edit">
+                            <i class="icn-btn glyphicon glyphicon-cog"></i>Editar Configuración
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper-repositorio">
+    <div class="container block-search block-search-detail">
+      <div class="row">
+        <div class="col-12 col-md-4 mg-space">
+          <div class="field-filter">
+            <div class="type-search">
+              <p class="title-block">Busqueda</p>
+              <span class="sub-title">Reiniciar Busqueda</span>
+              <input class="input-query" type="text" name="" placeholder="ingresa el nombre de la empresa" value="">
+              <p class="txt-result">Resultados por pagina</p>
+              <div class="div-result">
+                <select class="select-resultds" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <span class="data-search_result">Resultados encontrados xxx de xxx</span>
+              </div>
+            </div>
+            <div class="type-search filter">
+              <p class="title-block">Busqueda por filtro</p>
+              <span class="sub-title">Reiniciar filtro</span>
+              <div class="type-search__item">
+                <select class="select-resultds mrg-input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <select class="select-resultds mrg-input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="type-search__item">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Solucion">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Partner">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Nro. de empleados">
+              </div>
+              <div class="type-search__item no-padding">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Tamaño de empresa">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Año de implementacion ">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Recursos">
+              </div>
+            </div>
+            <div class="btn-submit btn-search text-center">Buscar</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 bd-left pad-separator mg-space">
+          <div class="sec-detail-portal">
+            <div class="menu-main">
+              <div class="backMenu">
+                <i class="fas fa-angle-left" style="padding-right: 20px"></i><span>Volver</span>
+              </div>
+              <div class="sec-languages">
+                <div class="icon-language">
+                  <img class="img-responsive" src="assets/img/peru.png" />
+                </div>
+                <div class="wrapper-select-lg">
+                  <select class="selector-lang" name="">
+                    <option value=""> Perú</option>
+                    <option value="">chile</option>
+                    <option value="">Uruguay</option>
+                    <option value="">Venezuela</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="banner-detail-portal">
+              <div class="banner-portal">
+                <div class="row flex">
+                  <div class="col-6 col-md-6 ">
+                    <img class="img-responsive" src="assets/img/logo-detail.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-6  p-center">
+                    <div>
+                      <div class="resume-portal">
+                        <h3 class="title-banner">Asoc. Cultural Johannes Gutenberg
+                        </h3>
+                        <p class="text-banner">Asoc. Cultural Johannes Gutenberg es una organización sin fines de lucro, que brinda oportunidades de mejorar la
+                          calidad de vida de niños y niñas en situación de pobreza, de los distritos de El Agustino, Comas y sus alrededores, ofreciéndoles educación,
+                          una especialidad técnica, alimentación, asistencia social-psicológica, y atención médica dental en sus consultorios.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input-description">
+              <div class="block-input">
+                <span class="title-label">Pág. Web :</span>
+                <input class="data-input" type="text" name="" value="">
+              </div>
+              <div class="block-input">
+                <span class="title-label">Partner :</span>
+                <input class="data-input" type="text" name="" value="">
+              </div>
+              <div class="block-input">
+                <span class="title-label">Nro. de empleados :</span>
+                <input class="data-input" type="text" name="" value="">
+              </div>
+              <div class="block-input">
+                <span class="title-label">Nivel de facturación :</span>
+                <input class="data-input" type="text" name="" value="">
+              </div>
+              <div class="block-input">
+                <span class="title-label">Contacto de Seidor :</span>
+                <input class="data-input" type="text" name="" value="">
+              </div>
+              <div class="block-input">
+                <span class="title-label">Cargo :</span>
+                <input class="data-input" type="text" name="" value="">
+              </div>
+              <div class="block-input">
+                <span class="title-label">Correo :</span>
+                <input class="data-input" type="text" name="" value="">
+              </div>
+              <div class="block-input">
+                <span class="title-label">Teléfono :</span>
+                <input class="data-input" type="text" name="" value="">
+              </div>
+              <div class="block-input">
+                <span class="title-label">Productivo:</span>
+
+                <input class="checkBox" type="checkbox" name="" value="">
+              </div>
+              <div class="option-multimedia">
+                <div class="btn-pdf btn-media">Descarga pdf.
+                </div>
+                <div class="btn-media btn-video">Ver video
+                </div>
+                <div class="btn-media btn-medios">Aparición en medios</div>
+                <div class="btn-media btn-photo ">Fotos</div>
+              </div>
+              <div class="comments">
+                <div class="block-textarea">
+                  <span class="title-label">Notas :</span>
+                  <textarea rows="4" cols="50" placeholder="Máx. 500 caracteres ..."></textarea>
+                </div>
+              </div>
+              <div class="tablagen">
+                <div class="fila">
+                  <div class="column">
+                    <p>Insdustria</p>
+                  </div>
+                  <div class="column">
+                    <p>Solución</p>
+                  </div>
+                  <div class="column">
+                    <p class="no-border">País</p>
+                  </div>
+                </div>
+                <div class="fila">
+                  <div class="column">
+                    <p>Educación</p>
+                  </div>
+                  <div class="column">
+                    <p>SAP Business One</p>
+                  </div>
+                  <div class="column">
+                    <p class="no-border">Peru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal -->
+  <div class="modal fade ModalImg">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="slider-for">
+            <div class="slide-item">
+              <div class="wp-slider">
+                <div class="wp-img">
+                  <img class="img-responsive img-slider" src="assets/img/1.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                  </button>
+                  <p class="title">Lorem ipsum dolor sit amet,</p>
+                  <p class="description">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide-item">
+              <div class="wp-slider">
+                <div class="wp-img">
+                  <img class="img-responsive img-slider" src="assets/img/4.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                  </button>
+                  <p class="title">Lorem ipsum dolor sit amet,</p>
+                  <p class="description">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide-item">
+              <div class="wp-slider">
+                <div class="wp-img">
+                  <img class="img-responsive img-slider" src="assets/img/1.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                  </button>
+                  <p class="title">Lorem ipsum dolor sit amet,</p>
+                  <p class="description">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide-item">
+              <div class="wp-slider">
+                <div class="wp-img">
+                  <img class="img-responsive img-slider" src="assets/img/2.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                  </button>
+                  <p class="title">Lorem ipsum dolor sit amet,</p>
+                  <p class="description">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide-item">
+              <div class="wp-slider">
+                <div class="wp-img">
+                  <img class="img-responsive img-slider" src="assets/img/3.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                  </button>
+                  <p class="title">Lorem ipsum dolor sit amet,</p>
+                  <p class="description">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide-item">
+              <div class="wp-slider">
+                <div class="wp-img">
+                  <img class="img-responsive img-slider" src="assets/img/4.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                  </button>
+                  <p class="title">Lorem ipsum dolor sit amet,</p>
+                  <p class="description">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade ModalPDF">
+    <div class="modal-dialog modal-mb-table d-block d-md-none" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="fa fa-chevron-left arrow-return" aria-hidden="true"></span>
+          <h4 class="md-title">ARCHIVOS<br><span class="bold-text-modal">MULTIMEDIA</span></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row bg-gray pad-row ">
+              <div class="col-10 ">
+                <p class="title-file">name file 1</p>
+                <p class="resume-file">Lorem ipsum dolor sit ame Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="col-2 ">
+                <ul class="list-op">
+                  <li class=""> <i class="fas fa-download"></i> </li>
+                  <li class="no-border"> <i class="fas fa-eye"></i> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row pad-row ">
+              <div class="col-10 ">
+                <p class="title-file">name file 1</p>
+                <p class="resume-file">Lorem ipsum dolor sit ame Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="col-2 ">
+                <ul class="list-op">
+                  <li class=""> <i class="fas fa-download"></i> </li>
+                  <li class="no-border"> <i class="fas fa-eye"></i> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row bg-gray pad-row ">
+              <div class="col-10 ">
+                <p class="title-file">name file 1</p>
+                <p class="resume-file">Lorem ipsum dolor sit ame Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="col-2 ">
+                <ul class="list-op">
+                  <li class=""> <i class="fas fa-download"></i> </li>
+                  <li class="no-border"> <i class="fas fa-eye"></i> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row pad-row ">
+              <div class="col-10 ">
+                <p class="title-file">name file 1</p>
+                <p class="resume-file">Lorem ipsum dolor sit ame Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="col-2 ">
+                <ul class="list-op">
+                  <li class=""><i class="fas fa-download"></i> </li>
+                  <li class="no-border"> <i class="fas fa-eye"></i> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <i class="fas fa-angle-double-left"></i> <span> 1 </span> <i class="fas fa-angle-double-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="modal-dialog modal-dkt-table d-none d-md-block" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Lorem ipsum dolor </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+        </div>
+
+
+        <div class="modal-body">
+          <div class="tablagen">
+            <div class="fila fila-header bg-header">
+              <div class="column">
+                <p>Nombre</p>
+              </div>
+              <div class="column">
+                <p>Descripcion</p>
+              </div>
+              <div class="column">
+                <p class="no-border">Descargar</p>
+              </div>
+              <div class="column">
+                <p class="no-border">Visualizar</p>
+              </div>
+            </div>
+            <div class="fila bg-gray">
+              <div class="column">
+                <p>Insdustria</p>
+              </div>
+              <div class="column">
+                <p class="no-border">País</p>
+              </div>
+              <div class="column">
+                <p> <i class="fas fa-download"></i> </p>
+              </div>
+              <div class="column">
+                <p class="no-border"><i class="fas fa-eye"></i></p>
+              </div>
+            </div>
+            <div class="fila bg-white">
+              <div class="column">
+                <p>Educación</p>
+              </div>
+              <div class="column">
+                <p>SAP Business One</p>
+              </div>
+              <div class="column">
+                <p> <i class="fas fa-download"></i> </p>
+              </div>
+              <div class="column">
+                <p class="no-border"><i class="fas fa-eye"></i> </p>
+              </div>
+            </div>
+            <div class="fila bg-gray">
+              <div class="column">
+                <p class="no-border">País</p>
+              </div>
+              <div class="column">
+                <p>Insdustria</p>
+              </div>
+              <div class="column">
+                <p> <i class="fas fa-download"></i> </p>
+              </div>
+              <div class="column">
+                <p class="no-border"><i class="fas fa-eye"></i> </p>
+              </div>
+            </div>
+            <div class="fila bg-white">
+              <div class="column">
+                <p class="no-border">País</p>
+              </div>
+              <div class="column">
+                <p>Educación</p>
+              </div>
+              <div class="column">
+                <p> <i class="fas fa-download"></i> </p>
+              </div>
+              <div class="column">
+                <p class="no-border"><i class="fas fa-eye"></i> </p>
+              </div>
+            </div>
+            <div class="fila bg-gray">
+              <div class="column">
+                <p class="no-border">País</p>
+              </div>
+              <div class="column">
+                <p>Insdustria</p>
+              </div>
+              <div class="column">
+                <p> <i class="fas fa-download"></i> </p>
+              </div>
+              <div class="column">
+                <p class="no-border"><i class="fas fa-eye"></i> </p>
+              </div>
+            </div>
+            <div class="fila bg-white">
+              <div class="column">
+                <p class="no-border">País</p>
+              </div>
+              <div class="column">
+                <p>lorem ipsum</p>
+              </div>
+              <div class="column">
+                <p> <i class="fas fa-download"></i> </p>
+              </div>
+              <div class="column">
+                <p class="no-border"><i class="fas fa-eye"></i> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="modal-footer">
+          <i class="fas fa-long-arrow-alt-left"></i> <i class="fas fa-angle-double-left"></i> <span> 1 / 4</span> <i class="fas fa-angle-double-right"></i> <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade ModalVideo">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade ModalMedia">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<body>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="assets/js/index.js">
+
+  </script>
+</body>
+
+</html>

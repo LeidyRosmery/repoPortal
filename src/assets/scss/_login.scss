@@ -1,0 +1,141 @@
+@font-face {
+    font-family: LatoRegular;
+    src:  url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+.sec-login {
+  .pad-0{
+    padding:0 !important;
+  }
+  .sec-photo_fullscreen {
+    // position: absolute;
+    background-image: url("../img/banner-login_mb.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100vh;
+    background-position: inherit;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+    @include minw(md) {
+
+          background-image: none;
+      height: 99.9vh;
+    }
+  }
+.bg-desktop{
+  @include minw(md) {
+    background-image: url("../img/slide.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+  .wp-logo {
+    width: 230px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    @include minw(md) {
+      left: 50%;
+      width: auto;
+      top: 10%;
+      transform: translate(-50%, -10%);
+    }
+
+    .img-logo_login {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .wp-login {
+    position: absolute;
+    left: 50%;
+    width: 90%;
+    top: 75%;
+    transform: translate(-50%, -75%);
+    @include minw(md) {
+      left: 50%;
+      width: 90%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .title-login {
+      color: $blueDark;
+      font-family: $ff-regular;
+      text-align: center;
+      font-size: 1.3em;
+      line-height: 1.1em;
+      @include minw(md) {
+        font-size: 1.8em;
+        text-align: left;
+        margin: 25px 0;
+        padding-left: 20px;
+      }
+    }
+
+    .box-login {
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 10px;
+      padding: 10px 15px;
+      @include minw(md) {
+        padding: 20px 20px 40px;
+      }
+      .title-form {
+        color: $blueDark;
+        font-size: 1.2em;
+        text-align: left;
+        margin: 0;
+        font-family: $ff-regular;
+        @include minw(md) {
+          font-size: 1.8em;
+          text-align: left;
+        }
+      }
+      .div-input {
+        width: 100%;
+        padding: 5px 0;
+        outline: none;
+        @include minw(md) {
+          padding: 10px 0;
+        }
+
+        &__tag {
+          border-radius: 5px;
+          width: 100%;
+          height: 35px;
+          padding: 0 ;
+          color: $grayDark;
+          font-size: 1em;
+          border: 1px solid $blueDark;
+          @include minw(md) {
+            font-size: 1.3em;
+          }
+        }
+      }
+      .btn-login {
+        color: $white;
+        height: 37px;
+        line-height: 37px;
+        border-radius: 7px;
+        width: 100%;
+        font-family: $ff-light;
+        font-size: 1.2em;
+        border: none;
+        background: $blueDark;
+            margin: 5px 0;
+      }
+    }
+  }
+}

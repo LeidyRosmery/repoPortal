@@ -1,0 +1,218 @@
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.md-profile {
+  .modal-content {
+    height: 97vh;
+  }
+}
+
+.header-portal {
+  background-color: $black;
+  padding: 10px 0;
+  color: $white;
+  width: 100%;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  @include minw(md){
+    height: auto;
+  }
+
+  .wrapper-header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .wp-logo {
+      height: 100%;
+      width: 150px;
+      @include minw(md) {
+        width: 300px;
+      }
+    }
+
+    .wp-login {
+      .content-log {
+        @include minw(md) {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: fit-content;
+          float: right;
+        }
+      }
+
+      .title-portal {
+        font-family: $ff-bold;
+        color: $white;
+        font-size: 0.8em;
+        margin: 5px 0;
+        text-align: right;
+        @include minw(md) {
+          font-size: 1.7em;
+          margin: 15px 0 5px;
+          text-align: left;
+        }
+      }
+
+      .name-user {
+        color: #fff;
+        font-size: 1.3em;
+        line-height: 1em;
+        font-family: "openSans-Light", sans-serif;
+      }
+
+      .div-user {
+        width: 30px;
+        position: relative;
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+        @include minw(md) {
+          width: 40px;
+          margin: 0 20px;
+          float: none;
+        }
+      }
+    }
+  }
+
+  .div-profile {
+    width: 300px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    opacity: 1;
+    transition: opacity 0.3s;
+    padding: 0;
+    display: none;
+    box-shadow: 0 0.625rem 1.875rem 0 rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.15);
+
+    .title-detail__profile {
+      padding-top: 15px;
+    }
+  }
+
+  .detail-contact__profile {
+    padding: 10px 30px;
+    text-align: left;
+  }
+
+  .title-detail__profile {
+    text-align: center;
+    color: $grayDark;
+    font-size: 1em;
+    border-bottom: 1px solid $grayLight;
+    font-family: $ff-light;
+    padding: 0 15px 15px;
+  }
+
+  .block-detail {
+    margin: 10px 0;
+    @include minw(md) {
+      margin: 10px 0 25px;
+    }
+  }
+
+  .config-user {
+    border-top: 1px solid #9C9BA0;
+    padding: 10px 0;
+    text-align: center;
+
+    .edit {
+      background: $blueDark;
+      color: $white;
+      font-family: $ff-semibold;
+      font-size: 1em;
+      cursor: pointer;
+      text-align: center;
+      margin: 0 auto;
+      width: 80%;
+      border-radius: 5px;
+      line-height: 40px;
+      height: 40px;
+      padding: 0 10px;
+    }
+  }
+
+  .wp-head-profile {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    .img-profile {
+      // float: left;
+      margin-right: 20px;
+    }
+
+    .main__profile {
+      .name-user {
+        color: #333;
+        width: 100%;
+        font-family: $ff-semibold;
+        font-size: 1em;
+        text-align: left;
+        margin: 0;
+      }
+
+      .job-user {
+        margin: 0;
+        color: $grayDark;
+        font-family: $ff-light;
+      }
+    }
+  }
+
+  p.title-sec__profile {
+    text-align: left;
+    margin: 0;
+    color: $grayDark;
+    font-family: $ff-semibold;
+  }
+
+  p.label__profile {
+    color: $grayLight;
+    margin: 0;
+    font-family: $ff-regular;
+    font-size: 0.8em;
+  }
+
+  p.data-label__profile {
+    color: $blueDark;
+    font-family: $ff-regular;
+    margin: 0;
+    font-size: 0.9em;
+    margin-bottom: 6px;
+  }
+}
+
+.profile-quick {
+  position: absolute;
+  z-index: 1;
+  top: 135%;
+  left: -325%;
+  margin-left: -60px;
+  display: none;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 69%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+  }
+
+  .profile-quick_modal {}
+}
+// styles search filter
+//

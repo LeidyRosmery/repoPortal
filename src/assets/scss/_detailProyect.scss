@@ -1,0 +1,432 @@
+.sec-detailProyecto {
+  .modal.fade.ModalImg.show,
+  .modal.fade.ModalPDF.show {
+    align-items: center;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+  }
+  .ModalImg{
+    .close{
+      opacity: 1;
+    }
+  }
+
+  .ModalImg,
+  .ModalPDF {
+    .modal-dialog {
+      max-width: 900px;
+      width: 900px;
+    }
+
+    .modal-body {
+      padding: 0;
+    }
+
+    button.close {
+      // padding: 20px;
+    }
+  }
+
+  .ModalPDF {
+    .modal-dkt-table {
+      .modal-header {
+        border: none;
+      }
+
+      .bg-white {
+        background: #fff;
+      }
+
+      .close {
+        color: #fff;
+        opacity: 1;
+        outline: none;
+      }
+
+      .bg-gray {
+        background: #F0F0F0;
+      }
+
+      .bg-header {
+        background: $grayDark;
+
+        p {
+          color: #fff;
+        }
+      }
+
+      .modal-footer {
+        background-color: #F0F0F0;
+    color: black;
+    padding: 6px 20px;
+    border-top: 2px solid $grayDark;
+      }
+    }
+
+    .modal-mb-table {
+      .modal-header {
+        padding: 10px 15px;
+
+        .md-title {
+          font-size: 0.8em;
+          font-family: "opensans-Bold",sans-serif;
+          color: #333;
+          margin: 0;
+          padding-left: 15px;
+        }
+
+        .bold-text-modal {
+          font-weight: bolder;
+        }
+      }
+
+      button.close {
+        opacity: 1;
+      }
+
+      .modal-footer {
+        padding: 4px 20px;
+      }
+
+      .title-file {
+        color: #276092;
+        margin: 0;
+        font-weight: bold;
+        font-family: "opensans-Light",sans-serif;
+        font-size: 1.1em;
+      }
+
+      .resume-file {
+        color: #333;
+        margin: 0;
+        font-size: 0.8em;
+        line-height: 1em;
+      }
+
+      .modal-content {
+        background: #fff;
+        border: none;
+      }
+
+      .pd-modal {
+        padding: 0 10px;
+      }
+
+      .list-op {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        text-align: center;
+
+        li {
+          padding: 0;
+          border-bottom: 1px solid #333;
+          color: #333;
+        }
+      }
+
+      .no-border {
+        border: none !important;
+      }
+
+      .modal-header {
+        h5 {
+          color: #333;
+        }
+      }
+
+      .bg-gray {
+        background-color: #F0F0F0;
+      }
+
+      .pad-row {
+        padding: 10px 0;
+      }
+    }
+
+    .tablagen {
+      border-top: 5px solid $blueDark;
+    }
+
+    .tablagen .column {
+      vertical-align: middle;
+    }
+
+    .tablagen .fila p {
+      border-right: none;
+      min-height: 25px;
+    }
+
+    .modal-header {
+      h5 {
+        color: #fff;
+      }
+    }
+
+    .modal-content {
+      background: transparent;
+      border: none;
+    }
+
+    .tablagen {
+      background: #fff;
+      width: 100%;
+    }
+  }
+
+  .sec-detail-portal {
+    padding-bottom: 20px;
+
+    .menu-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #F0F0F0;
+      margin-bottom: 10px;
+
+      .backMenu {
+        font-family: $ff-bold;
+        font-size: 1.2em;
+        color: $grayDark;
+        cursor: pointer;
+        @include minw(md) {
+          font-size: 1.1em;
+          text-transform: uppercase;
+          color: #333;
+        }
+
+        &:hover {
+          color: $blueDark;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .sec-languages {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .icon-language {
+        background: #fff;
+        color: #fff;
+        display: inline;
+        padding: 0;
+        width: 30px;
+      }
+
+      .selector-lang {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+      }
+
+      .wrapper-select-lg {
+        width: 90px;
+        border: none;
+        @include minw(md) {
+          width: 125px;
+        }
+      }
+    }
+
+    .banner-detail-portal {
+      .banner-portal {
+        .resume-portal {
+          .title-banner {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #575655;
+            font-family: "openSans-Bold", sans-serif;
+            @include minw(md) {
+              font-size: 1.4em;
+            }
+          }
+
+          .text-banner {
+            line-height: 1.4em;
+            font-size: 0.9em;
+            font-family: "openSans-Light", sans-serif;
+            color: #575655;
+            @include minw(md) {
+              line-height: 1.4em;
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+
+    .input-description {
+      .btn-media {
+        background: #225C8B;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        font-size: 1.2em;
+        height: 2em;
+        line-height: 2em;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        padding: 0 10px;
+        cursor: pointer;
+      }
+
+      .block-textarea textarea {
+        height: 100px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        padding: 10px;
+        @include minw(md) {
+          height: 168px;
+        }
+      }
+
+      .block-input {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        @include minw(md) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .checkBox {
+          width: 100%;
+          font-size: 1.2em;
+          color: #575655;
+          padding: 0;
+          outline: none;
+        }
+
+        .title-label {
+          font-weight: bold;
+          font-size: 1em;
+          font-family: "opensans-Semibold", sans-serif;
+          color: #575655;
+          padding-right: 10px;
+          width: 300px;
+          @include minw(md) {
+            font-size: 1.2em;
+          }
+        }
+
+        .data-input {
+          margin: 0 0 15px;
+          border-radius: 5px;
+          font-family: "openSans-Light", sans-serif;
+          width: 100%;
+          height: 30px;
+          font-size: 1.2em;
+          border: 1px solid #9C9BA0;
+          padding: 4px 10px;
+          color: #575655;
+          @include minw(md) {
+            height: 35px;
+            margin: 5px 0;
+          }
+        }
+
+        .checkBox {
+          width: 100%;
+          font-size: 1.2em;
+          color: #575655;
+          padding: 0;
+          outline: none;
+        }
+      }
+
+      .option-multimedia {
+        padding: 20px 0;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        @include minw(md) {}
+      }
+
+      .block-textarea {
+        .title-label {
+          color: #565655;
+          font-weight: bold;
+          font-size: 1.2em;
+          padding-right: 10px;
+          display: block;
+          margin-bottom: 5px;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  .slider-for {
+    // height: 350px;
+    .slide-item {
+      padding: 10px;
+      // height: 45vh;
+      padding: 0;
+      width: 100%;
+      position: relative;
+
+      .wp-slider {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @include minw(md) {
+          flex-direction: row;
+        }
+
+        .wp-img {
+          display: block;
+          width: 100%;
+          @include minw(md) {
+            display: inline-block;
+            width: 50%;
+          }
+        }
+
+        .text {
+          width: 100%;
+          display: inline-block;
+          padding: 30px;
+          @include minw(md) {
+            width: 50%;
+          }
+
+          .title {
+            color: #276092;
+            font-size: 1.2em;
+            line-height: 1em;
+            width: 80%;
+            font-family: "opensans-semibold",sans-serif;
+            margin-bottom: 5px;
+            @include minw(md) {
+              font-size: 1.7em;
+            }
+          }
+
+          .description {
+            color: #575655;
+            font-size: 1em;
+            font-family: "opensans-Light",sans-serif;
+            line-height: 1.4em;
+            padding: 5px 0;
+            width: 100%;
+            @include minw(md) {
+              padding: 10px 0;
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

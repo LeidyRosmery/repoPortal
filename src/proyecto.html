@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<section class="sec-proyecto sec-commons">
+  <header class="header-portal border-line">
+    <div class="wrapper-header">
+      <div class="wp-logo">
+        <img class="img-responsive" src="assets/img/logo-header.png" alt="" />
+      </div>
+      <div class="wp-login">
+        <i class="fas fa-search d-block d-md-none "></i>
+        <h1 class="d-none d-md-block title-portal">PORTAL DE REFERENCIAS GLOBAL</h1>
+        <div class="content-log">
+          <span class="d-none d-md-block name-user">azalvidea@seidor.com
+          </span>
+          <div class="div-user" data-toggle="modal" data-target="#exampleModal">
+            <img class="img-responsive" src="assets/img/user-login.png" alt="" />
+            <div class="div-profile profile-quick">
+              <h3 class="title-detail__profile">Informacion de perfil</h3>
+              <div class="detail-contact__profile">
+                <div class="wp-head-profile">
+                  <img class="img-profile" src="assets/img/profile.png" alt="">
+                  <div class="main__profile ">
+                    <p class="name-user">Michael Muller</p>
+                    <p class="job-user">Account Manager</p>
+                  </div>
+                </div>
+                <div class="block-detail">
+                  <p class="title-sec__profile">Detalles del Perfil</p>
+                  <p class="label__profile">Telefono</p>
+                  <p class="data-label__profile">+ 001 6101 34869-0</p>
+                  <p class="label__profile">Fijo</p>
+                  <p class="data-label__profile">+ 001 6101 34869-0</p>
+                  <p class="label__profile">Email</p>
+                  <p class="data-label__profile">main.contact@company.com</p>
+                </div>
+
+                <div class="block-detail">
+                  <p class="title-sec__profile">Compañia</p>
+                  <p class="label__profile">Nombre</p>
+                  <p class="data-label__profile"> Adventure Company</p>
+                  <p class="label__profile">Direccion</p>
+                  <p class="data-label__profile">Main Street 4572, Los Angeles USA</p>
+                </div>
+                <div class="config-user">
+                  <div class="edit">
+                    <i class="icn-btn glyphicon glyphicon-cog"></i>Editar Configuración
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div id="exampleModal" class="md-profile modal fade exampleModal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">X</span>
+                    </button>
+                    <div class="profile-quick__modal">
+                      <h3 class="title-detail__profile">Informacion de perfil</h3>
+                      <div class="detail-contact__profile">
+                        <div class="wp-head-profile">
+                          <img class="img-profile" src="assets/img/profile.png" alt="">
+                          <div class="main__profile ">
+                            <p class="name-user">Michael Muller</p>
+                            <p class="job-user">Account Manager</p>
+                          </div>
+                        </div>
+
+                        <div class="block-detail">
+                          <p class="title-sec__profile">Detalles del Perfil</p>
+                          <p class="label__profile">Telefono</p>
+                          <p class="data-label__profile">+ 001 6101 34869-0</p>
+                          <p class="label__profile">Fijo</p>
+                          <p class="data-label__profile">+ 001 6101 34869-0</p>
+                          <p class="label__profile">Email</p>
+                          <p class="data-label__profile">main.contact@company.com</p>
+                        </div>
+
+                        <div class="block-detail">
+                          <p class="title-sec__profile">Compañia</p>
+                          <p class="label__profile">Nombre</p>
+                          <p class="data-label__profile"> Adventure Company</p>
+                          <p class="label__profile">Direccion</p>
+                          <p class="data-label__profile">Main Street 4572, Los Angeles USA</p>
+                        </div>
+                        <div class="config-user">
+                          <div class="edit">
+                            <i class="icn-btn glyphicon glyphicon-cog"></i>Editar Configuración
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper-repositorio">
+    <div class="container block-search">
+      <div class="row">
+        <div class="d-none d-md-block col-12 col-md-4 mg-space">
+          <div class="field-filter">
+            <div class="type-search">
+              <p class="title-block">Busqueda</p>
+              <span class="sub-title">Reiniciar Busqueda</span>
+              <input class="input-query" type="text" name="" placeholder="ingresa el nombre de la empresa" value="">
+              <p class="txt-result">Resultados por pagina</p>
+              <div class="div-result">
+                <select class="select-resultds" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <span class="data-search_result">Resultados encontrados xxx de xxx</span>
+              </div>
+            </div>
+            <div class="type-search filter">
+              <p class="title-block">Busqueda por filtro</p>
+              <span class="sub-title">Reiniciar filtro</span>
+              <div class="type-search__item">
+                <select class="select-resultds mrg-input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <select class="select-resultds mrg-input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="type-search__item">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Solucion">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Partner">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Nro. de empleados">
+              </div>
+              <div class="type-search__item no-padding">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Tamaño de empresa">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Año de implementacion ">
+                <input class="input-query mrg-input" type="text" name="" value="" placeholder="Recursos">
+              </div>
+            </div>
+            <div class="btn-submit btn-search text-center">Buscar</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 mg-space">
+          <div class="section-main-portal">
+            <div class="banner-portal-main d-none d-md-block">
+              <img class="img-responsive" src="assets/img/banner2.jpg" alt="" />
+              <div class="resume-txt">
+                <h1>BIENVENIDO AL REPOSITORIO GLOBAL DE SEIDOR</h1>
+                <p>Los testimonios de nuestros clientes son la garantía de calidad</p>
+              </div>
+            </div>
+            <div class="option-result">
+              <div class="paginator">
+                <span>Página
+                </span>
+                <span class="unit">1</span>
+                <span>de
+                </span>
+                <span class="total">1</span>
+              </div>
+              <div class="filter-by">
+                <select class="select-byfilter" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+
+              </div>
+            </div>
+            <div class="grid-result">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 pd-item">
+                  <div class="wrapper-item">
+                    <img class="img-item" src="assets/img/1.jpg" alt="" />
+                    <div class="info-item ">
+                      <p class="title-item">Asoc. Cultural Johanns Gutenberg</p>
+                      <p class="subtitle-item">Educacion | SAP Business One | Perú</p>
+                      <p class="resume-item">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odio, aspernatur obcaecati accusamus cupiditate eos totam. Debitis,
+                        commodi.
+                      </p>
+                      <div class="btn-submit btn-see-more text-center"> Ver más </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 pd-item">
+                  <div class="wrapper-item ">
+                    <img class="img-item" src="assets/img/2.jpg" alt="" />
+                    <div class="info-item">
+                      <p class="title-item">Asoc. Cultural Johanns Gutenberg</p>
+                      <p class="subtitle-item">Educacion | SAP Business One | Perú</p>
+                      <p class="resume-item">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odio, aspernatur obcaecati accusamus cupiditate eos totam. Debitis,
+                        commodi.
+                      </p>
+                      <div class="btn-submit btn-see-more text-center"> Ver más </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 pd-item">
+                  <div class="wrapper-item">
+                    <img class="img-item" src="assets/img/3.jpg" alt="" />
+                    <div class="info-item">
+                      <p class="title-item">Asoc. Cultural Johanns Gutenberg</p>
+                      <p class="subtitle-item">Educacion | SAP Business One | Perú</p>
+                      <p class="resume-item">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odio, aspernatur obcaecati accusamus cupiditate eos totam. Debitis,
+                        commodi.
+                      </p>
+                      <div class="btn-submit btn-see-more text-center"> Ver más </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 pd-item">
+                  <div class="wrapper-item">
+                    <img class="img-item" src="assets/img/4.jpg" alt="" />
+                    <div class="info-item">
+                      <p class="title-item">Asoc. Cultural Johanns Gutenberg</p>
+                      <p class="subtitle-item">Educacion | SAP Business One | Perú</p>
+                      <p class="resume-item">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odio, aspernatur obcaecati accusamus cupiditate eos totam. Debitis,
+                        commodi.
+                      </p>
+                      <div class="btn-submit btn-see-more text-center"> Ver más </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 pd-item">
+                  <div class="wrapper-item">
+                    <img class="img-item" src="assets/img/5.jpg" alt="" />
+                    <div class="info-item">
+                      <p class="title-item">Asoc. Cultural Johanns Gutenberg</p>
+                      <p class="subtitle-item">Educacion | SAP Business One | Perú</p>
+                      <p class="resume-item">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odio, aspernatur obcaecati accusamus cupiditate eos totam. Debitis,
+                        commodi.
+                      </p>
+                      <div class="btn-submit btn-see-more text-center"> Ver más </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 pd-item">
+                  <div class="wrapper-item">
+                    <img class="img-item" src="assets/img/6.jpg" alt="" />
+                    <div class="info-item">
+                      <p class="title-item">Asoc. Cultural Johanns Gutenberg</p>
+                      <p class="subtitle-item">Educacion | SAP Business One | Perú</p>
+                      <p class="resume-item">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam odio, aspernatur obcaecati accusamus cupiditate eos totam. Debitis,
+                        commodi.
+                      </p>
+                      <div class="btn-submit btn-see-more text-center"> Ver más </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-input">
+    <input class="input-main" type="text" placeholder="" name="" value="">
+  </div>
+  <div class="field-filter">
+    <div class="type-search">
+      <p class="title-block">Busqueda</p>
+      <span class="sub-title">Reiniciar Busqueda</span>
+      <input class="input-query" type="text" name="" placeholder="ingresa el nombre de la empresa" value="">
+      <p class="txt-result">Resultados por pagina</p>
+      <div class="div-result">
+        <select class="select-resultds" name="">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <span class="data-search_result">Resultados encontrados xxx de xxx</span>
+      </div>
+    </div>
+    <div class="type-search filter">
+      <p class="title-block">Busqueda por filtro</p>
+      <span class="sub-title">Reiniciar filtro</span>
+      <div class="type-search__item">
+        <select class="select-resultds mrg-input" name="">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <select class="select-resultds mrg-input" name="">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+      <div class="type-search__item">
+        <input class="input-query mrg-input" type="text" name="" value="" placeholder="Solucion">
+        <input class="input-query mrg-input" type="text" name="" value="" placeholder="Partner">
+        <input class="input-query mrg-input" type="text" name="" value="" placeholder="Nro. de empleados">
+      </div>
+      <div class="type-search__item no-padding">
+        <input class="input-query mrg-input" type="text" name="" value="" placeholder="Tamaño de empresa">
+        <input class="input-query mrg-input" type="text" name="" value="" placeholder="Año de implementacion ">
+        <input class="input-query mrg-input" type="text" name="" value="" placeholder="Recursos">
+      </div>
+    </div>
+    <div class="btn-submit btn-search text-center">Buscar</div>
+  </div>
+</section>
+
+<body>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="assets/js/index.js">
+
+  </script>
+</body>
+
+</html>
