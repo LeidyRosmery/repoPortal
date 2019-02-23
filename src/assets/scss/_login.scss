@@ -1,14 +1,16 @@
 @font-face {
-    font-family: LatoRegular;
-    src:  url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-family: LatoRegular;
+  src: url("../fonts/Lato-Regular.ttf") format('truetype');
 }
+
 .sec-login {
-  .pad-0{
-    padding:0 !important;
+  .pad-0 {
+    padding: 0 !important;
   }
+
   .sec-photo_fullscreen {
     // position: absolute;
-    background-image: url("../img/banner-login_mb.jpg");
+    background-image: url("../img/slide1.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,20 +27,59 @@
     transform: translate3d(0, 0, 0);
     width: 100%;
     @include minw(md) {
-
-          background-image: none;
+      background-image: none;
       height: 99.9vh;
     }
+
+    .ln-content-create-event {
+      background: rgba(227, 96, 57 ,.9);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      @include minw(md) {
+        background: #fff;
+      }
+    }
   }
-.bg-desktop{
-  @include minw(md) {
-    background-image: url("../img/slide.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+  .bg-desktop {
+    @include minw(md) {
+      background-image: url("../img/desktop.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    .efect-opacity{
+      background: rgba(227, 96, 57 ,.9);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+    }
+    .wp-sumary{
+      position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          &>h1{
+              font-family: 'Open Sans', sans-serif;
+              font-weight: bold;
+              color: #fff;
+          }
+      &>p{
+        margin: 0 0 10px;
+      color: #fff;
+      font-size: 1.2em;
+      font-family: 'Open Sans', sans-serif;
+      }
+
+
+    }
   }
-}
+
   .wp-logo {
     width: 230px;
     position: absolute;
@@ -72,11 +113,13 @@
     }
 
     .title-login {
-      color: $blueDark;
-      font-family: $ff-regular;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
       text-align: center;
       font-size: 1.3em;
       line-height: 1.1em;
+      font-weight: 300;
+      font-size: 1.4rem;
       @include minw(md) {
         font-size: 1.8em;
         text-align: left;
@@ -86,23 +129,25 @@
     }
 
     .box-login {
-      background-color: rgba(255, 255, 255, 0.6);
+      // background-color: rgba(255, 255, 255, 0.6);
       border-radius: 10px;
       padding: 10px 15px;
       @include minw(md) {
         padding: 20px 20px 40px;
       }
+
       .title-form {
-        color: $blueDark;
+        // color: $blueDark;
         font-size: 1.2em;
         text-align: left;
         margin: 0;
-        font-family: $ff-regular;
+        // font-family: $ff-regular;
         @include minw(md) {
           font-size: 1.8em;
           text-align: left;
         }
       }
+
       .div-input {
         width: 100%;
         padding: 5px 0;
@@ -112,29 +157,87 @@
         }
 
         &__tag {
-          border-radius: 5px;
           width: 100%;
           height: 35px;
-          padding: 0 ;
-          color: $grayDark;
+          padding: 0;
+          color: #fff;
+          outline: none;
           font-size: 1em;
-          border: 1px solid $blueDark;
+              padding: 0 1em;
+          background: transparent;
+          background-color: rgba(255,255,255,0.3);
+          border: none;
+          /* border: 1px solid #fff; */
+          border-radius: 5px;
+
+          &::placeholder {
+            color: #fff;
+            // padding-left: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            @include minw(md) {
+            color: #333;
+            font-size: .95em;
+            }
+          }
           @include minw(md) {
             font-size: 1.3em;
+            background-color: #f1f1f1;
           }
         }
       }
+
       .btn-login {
-        color: $white;
+        color: #333;
         height: 37px;
         line-height: 37px;
         border-radius: 7px;
         width: 100%;
-        font-family: $ff-light;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
         font-size: 1.2em;
         border: none;
-        background: $blueDark;
-            margin: 5px 0;
+        background: #fff;
+        margin: 5px 0;
+        @include minw(md) {
+          color: #fff;
+          background: #333;
+        }
+      }
+    }
+  }
+
+  .wp-socialMedia {
+    position: fixed;
+    bottom: 2rem;
+    width: 100%;
+
+    .list-media {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      list-style: none;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .item-media {
+      display: inline-block;
+      margin: 5px 0;
+      padding: 15px;
+
+      .icon-media {
+        color: #fff;
+        font-size: 1.4em;
+
+        @include minw(md) {
+          color: #333;
+          font-size: 1.4em;
+        }
       }
     }
   }
