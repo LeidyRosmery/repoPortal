@@ -1,15 +1,6 @@
-@font-face {
-  font-family: LatoRegular;
-  src: url("../fonts/Lato-Regular.ttf") format('truetype');
-}
-
 .sec-login {
-  .pad-0 {
-    padding: 0 !important;
-  }
-
   .sec-photo_fullscreen {
-    // position: absolute;
+    position: absolute;
     background-image: url("../img/slide1.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -17,7 +8,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    height: 100vh;
+    height: 100%;
     background-position: inherit;
     overflow: hidden;
     padding: 0;
@@ -27,68 +18,15 @@
     transform: translate3d(0, 0, 0);
     width: 100%;
     @include minw(md) {
-      background-image: none;
-      height: 99.9vh;
-    }
-
-    .ln-content-create-event {
-      background: rgba(227, 96, 57 ,.9);
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      .subtitle-login{
-        color: #333;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        line-height: 1.2em;
-      }
-      justify-content: flex-end;
-      @include minw(md) {
-        background: #fff;
-      }
+      // background-image: url("../img/banner-login_desktop.jpg");
     }
   }
 
-  .bg-desktop {
-    @include minw(md) {
-      background-image: url("../img/desktop.jpg");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
-    }
-
-    .efect-opacity{
-      background: rgba(227, 96, 57 ,.9);
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: flex-end;
-    }
-    .wp-sumary{
-      position: absolute;
-      top: 50%;
-      left:50%;
-      transform:translate(-50%,-50%);
-      &>p{
-        margin: 0 0 10px;
-      color: #fff;
-      font-size: 1.2em;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-      }
-      &>h1{
-        margin: 0 0 10px;
-            color: #fff;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            font-size: 1.2em;
-            font-size: 2.5em;
-            font-weight: bolder;
-      }
-
-
-    }
+  .ln-content-create-event {
+    background: rgba(227, 96, 57 ,.9);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .wp-logo {
@@ -98,10 +36,10 @@
     left: 50%;
     transform: translate(-50%, -5%);
     @include minw(md) {
-      left: 50%;
-      width: auto;
+      left: 95%;
+      width: 320px;
       top: 10%;
-      transform: translate(-50%, -10%);
+      transform: translate(-95%, -10%);
     }
 
     .img-logo_login {
@@ -117,10 +55,13 @@
     top: 75%;
     transform: translate(-50%, -75%);
     @include minw(md) {
-      left: 50%;
-      width: 90%;
+      left: 88%;
+      width: 350px;
       top: 50%;
-      transform: translate(-50%, -50%);
+      background: #fff;
+      /* background: rgba(255,255,255,.5); */
+      border-radius: 13px;
+      transform: translate(-88%, -50%);
     }
 
     .title-login {
@@ -148,11 +89,11 @@
       }
 
       .title-form {
-        // color: $blueDark;
+        color: $blueDark;
         font-size: 1.2em;
         text-align: left;
         margin: 0;
-        // font-family: $ff-regular;
+        // font-family: $ff-bold;
         @include minw(md) {
           font-size: 1.8em;
           text-align: left;
@@ -174,7 +115,7 @@
           color: #fff;
           outline: none;
           font-size: 1em;
-              padding: 0 1em;
+          padding: 0 1em;
           background: transparent;
           background-color: rgba(255,255,255,0.3);
           border: none;
@@ -187,8 +128,8 @@
             font-family: 'Open Sans', sans-serif;
             font-weight: 300;
             @include minw(md) {
-            color: #333;
-            font-size: .95em;
+              color: #333;
+              font-size: 0.95em;
             }
           }
           @include minw(md) {
@@ -199,7 +140,7 @@
       }
 
       .btn-login {
-        color: #333;
+        color: #fff;
         height: 37px;
         line-height: 37px;
         border-radius: 7px;
@@ -208,7 +149,7 @@
         font-weight: 600;
         font-size: 1.2em;
         border: none;
-        background: #fff;
+        background: #333;
         margin: 5px 0;
         @include minw(md) {
           color: #fff;
@@ -244,12 +185,38 @@
       .icon-media {
         color: #fff;
         font-size: 1.4em;
-
         @include minw(md) {
-          color: #333;
-          font-size: 1.4em;
+          color: #fff;
+  font-size: 1.8em;
         }
       }
+    }
+  }
+
+  .wp-sumary {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 450px;
+    text-align: left;
+    transform: translate(-20%, -50%);
+
+    & > p {
+      margin: 0 0 10px;
+        color: #fff;
+        font-size: 1.2em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+    }
+
+    & > h1 {
+      margin: 0 0 10px;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1.2em;
+      font-size: 2.5em;
+      font-weight: bolder;
     }
   }
 }
